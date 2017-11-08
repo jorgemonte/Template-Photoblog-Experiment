@@ -1,0 +1,41 @@
+<!-- home.php -->
+
+if (have_posts()):
+	while(have_posts()):
+		the_post() ;?>
+			l'affichage de l'article
+
+			endwhile;
+
+			endif;
+
+1: Colocar no CSS um bloco de comentario com o nome do tema, URI, etc
+
+2: tem que ter o index.php
+
+3: no header.php, antes do fechamento do </head> colocar <?php wp_head(); ?>
+
+4: Colocar os codigos de php no head (para o titulo, etc)
+
+5: separa o header.php
+
+6: separa o footer.php
+
+7: antes do fechamento do body colocar <?php wp_footer(); ?>
+
+8: coloca o codigo do functions, faz a parada funcionar.
+
+
+9: no arquivo home.php eh o que faz no wordpress aparecer os ultimos artigos
+
+10: dentro da sessao que tem os artigos
+
+colocar o codigo:
+
+if (have_posts()):
+	while(have_posts()):
+		the_post();
+
+		... (olhar codigo de mariejo)
+
+11: escrever function que permite colocar imagem para a postagem do artigo

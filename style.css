@@ -1,15 +1,3 @@
-/* CSS Document */
-
-/*------------------------------------------------------------------
-
-Template Name:      Jorge`s first photography Theme
-Version:            1.0.0
-Created Date:       25/10/2017
-Author:             Jorge Monte
-
-------------------------------------------------------------------
-
-
 /*
 
 font-family: 'Oswald', sans-serif;
@@ -20,7 +8,7 @@ font-family: 'Open Sans', sans-serif;
 
 *{margin: 0; padding: 0;}
 
-body{background-color: #f9f7f4; color:#282828;box-sizing: border-box;}
+body{background-color: #f9f7f4; color:#282828;}
 html{height: 100%; font-size: 15px;}
 
 ul{list-style: none;}
@@ -84,7 +72,7 @@ p{line-height: 1.5em; margin-bottom: 20px;}
 .red-bg{ background-color: #CC4425;} .red-txt{ color: #CC4425;}
 .salmon-bg{ background-color: #C55151;} .salmon-txt{ color: #C55151;}
 .green-txt{color: #40d825; } .green-bg{background-color: #36cc1a; }
-.gold-txt{color: #ffd600; }
+.gold-txt{color: #ffd600; } 
 .pink-txt{color: #d7598B; } .pink-bg{background-color: #d7598B; }
 .yellow-txt{color: #fac036;} .yellow-bg{background-color: #fac036;}
 
@@ -95,7 +83,7 @@ p{line-height: 1.5em; margin-bottom: 20px;}
 .shadow-lg{box-shadow: -4px 4px 30px 5px rgba(30,30,30,0.4);}
 
 
-/* GUIDELINES BORDER - ERASE IT LATER
+/* GUIDELINES BORDER - ERASE IT LATER   
 
 .red-b{border: 2px outset red;}
 .blue-b{border: 2px outset blue;}
@@ -105,7 +93,7 @@ p{line-height: 1.5em; margin-bottom: 20px;}
 */
 
 
-/* FONT STYLE */
+/* FONT STYLE */ 
 /* Montserrat 300 set to default on body tag */
 
 .font-1{font-family: 'Oswald', sans-serif; }
@@ -121,7 +109,7 @@ p{line-height: 1.5em; margin-bottom: 20px;}
 
 .italic{font-style:italic;}
 
-/* Website Style */
+/* Website Style */ 
 
 
 
@@ -147,7 +135,7 @@ INDEX:
 
 /*********************
 **********************
-          HEADER
+          HEADER 
 **********************
 *********************/
 
@@ -201,10 +189,6 @@ INDEX:
 
 /* 2.3: About section */
 
-.about-section-txt{
-	padding-bottom: 30px;
-}
-
 .about-section-txt p{
 	text-align: justify;
 }
@@ -220,6 +204,20 @@ INDEX:
 	color: white;
 }
 
+/* Articles area */
+
+.articles-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.article-item{
+	
+}
+
+
 
 /* Join us section */
 
@@ -227,124 +225,7 @@ INDEX:
 	margin: 0 .5em;
 }
 
-/*********************
-**********************
-          3. FOOTER
-**********************
-*********************/
 
 .footer{
 	height: 150px;
 }
-
-
-
-
-
-
-/*************************************
-**************************************
-          PAGE HOME.HTML/PHP
-
-  is where all the articles cards are
-**************************************
-*************************************/
-
-
-.article-parent article{
-	padding:20px;
-}
-
-.article-thumbnail-parent{
-	flex:1;
-}
-
-.article-thumbnail{
-	width:100%;
-	height: 250px;
-	background-image:url("img/sample.jpg");
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-.article-txt-parent{
-	flex:2;
-	padding: 20px;
-}
-
-.article-txt-parent h2{
-	margin-bottom: 20px;
-}
-
-.article-cards-meta-parent{
-	justify-content: flex-end;
-}
-
-.meta-parent-item{
-	padding: 5px 10px;
-}
-
-
-
-
-
-/*************************************
-**************************************
-          PAGE PAGE.HTML/PHP
-**************************************
-*************************************/
-
-
-.page-img-container{
-	width: 100%;
-}
-
-.page-img-container img{
-	width: 100%;
-	height:auto;
-}
-
-
-
-
-
-
-/*************************************
-**************************************
-          PAGE SINGLE.HTML/PHP
-**************************************
-*************************************/
-
-.single-article-img{
-	height:30vh;
-	min-height:600px;
-	background-image: url("img/sample3.jpg");
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-
-/*************************************
-**************************************
-          PAGE SINGLE.HTML/PHP
-**************************************
-*************************************/
-
-.page404{
-	height:90vh;
-}
-
-.page404 h1,
-.page404 h2{
-	font-size: 5em;
-}
-
-.image-fail{
-	width:80%;
-	height:400px;
-	background-image: url("img/fail.jpg");
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center center;

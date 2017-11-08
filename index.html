@@ -21,18 +21,36 @@
 <div class="site  white-bg shadow-sm">
 
 	<header>
-	<!-- Banner image at the header -->
-		<div class="banner-img"></div>
+		<nav class="header-nav flex-center">
+			<ul class="flex font-1 semibold dark2-txt">
+				<li>home</li>
+				<li>about</li>
+				<li>single</li>
+				<li>contact</li>
+			</ul>
+		</nav>
 
-	<?php get_header(); ?>
+		<div class="banner-img"></div>
 	</header>
 
 <!-- MAIN -->
 	<main>
 
+<!-- welcome message section area -->
+		<section class="welcome-section section-sep darker-bg pale-txt blue-b font-2 light">
+			<div class="marged">
+				<h3 class="font-2 light marged txt-center italic mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, eum. Ex voluptatem suscipit, iusto alias modi, voluptatum perferendis minima exercitationem commodi unde ad, animi vel magnam adipisci tenetur et. Tempora?</h3>	
+			</div>
+			
+			<form class=" flex-center yellow-b" action="">
+				<input type="text" placeholder="Search">
+				<input type="submit">
+			</form>
+			
+		</section>
 
-<!-- about section area -->
-		<section class="about-section pale-bg section-sep red-b">
+<!-- articles section area -->
+		<section class="about-section section-sep red-b">
 			<div class="marged">
 				<div class="section-name marged">
 					<h3 class="font-1 section-sep">About</h3>
@@ -43,23 +61,56 @@
 					<p class="blue-b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique et tellus ac dictum. Integer egestas tortor eu egestas consectetur. Pellentesque auctor consectetur magna. Fusce auctor accumsan ex, faucibus euismod risus elementum a. In suscipit rutrum nibh vitae faucibus. Sed ac mauris molestie, congue augue eget, feugiat ex. Sed sit amet finibus lacus, non tincidunt arcu. Sed lorem eros, malesuada ut metus id, tempor gravida neque. In vehicula sodales arcu, vel molestie orci ultrices non. Etiam euismod enim nec orci viverra consequat. Etiam id justo quis tellus eleifend dictum. Maecenas odio urna, volutpat nec dui quis, fermentum interdum elit. Sed nec metus sed felis semper luctus. Duis tincidunt tempor purus, sit amet laoreet ligula consequat a. Nullam sollicitudin ultricies dolor, a eleifend tortor sodales non.</p>
 
 					<button class="font-1 light">Read More</button>
-
+					
 				</div><!-- ./about-section-txt-->
 			</div><!-- ./marged -->
 		</section>
 
+		<!-- articles section area -->
+		<section class="grey5-bg about-section section-sep red-b">
+
+			<div class="marged">
+			<div class="section-name marged">
+				<h3 class="font-1 section-sep">Articles</h3>
+			</div>
+
+			<div class="articles-section articles-wrapper marged yellow-b font-2">
+
+			<article class="article-item white-bg shadow-xs">item1</article>
+			<article class="article-item white-bg shadow-xs">item2</article>
+			<article class="article-item white-bg shadow-xs">item3</article>
+			<article class="article-item white-bg shadow-xs">item4</article>
+
+		
+			</div><!-- ./about-section-txt-->
+			</div><!--./marged-->
+		</section>
+
+		<section class="join-us section-sep blue-b">
+			<div class="marged">
+				<div class="section-name marged">
+				<h3 class="font-1 section-sep">Join us</h3>
+				</div>
+
+				<div class="social-media flex-center red-b">
+				<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i>
+
+			</div><!-- ./marged-->			
+		</section>
 
 	</main>
 
 <!-- FOOTER -->
 	<footer>
-		<div class="footer dark2-bg pale-txt flex-col-center txt-center">
-			<h2 class="mb-20">This is an awesome footer</h2>
-			<h5 class="regular">Protected by a super <i class="fa fa-copyright" aria-hidden="true"></i>Copyright</h5>
+		<div class="footer dark2-bg pale-txt flex-center txt-center">
+			<h2>This is an awesome footer</h2>
 		</div>
 	</footer>
 
 </div><!--  ./site -->
-
+	
 </body>
 </html>
